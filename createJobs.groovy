@@ -20,3 +20,19 @@ pipelineJob('theme-park-job') {
         }
     }
 }
+
+pipelineJob('theme-park-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/misiek001/spring-boot-api-example.git'
+                    }
+                    branch 'mymaster'
+                    scriptPath('Jenkinsfile-docker')
+                }
+            }
+        }
+    }
+}
