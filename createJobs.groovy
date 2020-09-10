@@ -43,7 +43,7 @@ pipelineJob('theme-park-job-aws') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/tkgregory/spring-boot-api-example.git'
+                        url 'https://github.com/misiek001/spring-boot-api-example.git'
                     }
                     branch 'mymaster'
                     scriptPath('Jenkinsfile-aws')
